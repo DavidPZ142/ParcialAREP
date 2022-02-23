@@ -119,6 +119,15 @@ public class HTTPServer {
                 +"<head>"
                 + "<title>clima </title>\n"
                 + "</head>"
+                +"<body>"
+                +"<script>\n"
+                +"function generar(){\n"
+                +"json = window.open(\"consulta\"+\"?lugar=\"+document.getElementById(\"city\").value);}"
+                +"</script>\n"
+                +" <br><br><br>\n"
+                +"Ciudad: <input type=\"city\"id=\"city\"/><br><br>\n"
+                +"<button onclick=\"generar()\" >generar</button>\n"
+                +"</body>\n"
                 +"</html>\n";
 
         printWriter.println(outputLine);
